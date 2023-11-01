@@ -108,7 +108,7 @@ const save_answers = async () => {
 
           <select-menu label="Biggest challenge the youth in your community faces"
                        :options="['Low high school graduation rate', 'High teenage birth rate', 'Economically disadvantaged', 'Not enough affordable after school activities']"
-                       placeholder="Select an option" v-model="answers[7]"></select-menu>
+                       placeholder="Select an option" v-model="answers[8]"></select-menu>
 
           <text-input label="Zip Code" v-model="answers[9]"></text-input>
 
