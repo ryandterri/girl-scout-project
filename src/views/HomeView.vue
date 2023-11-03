@@ -4,52 +4,6 @@ import SelectMenu from "@/components/select-menu.vue";
 import { ref } from "vue";
 import TextInput from "@/components/text-input.vue";
 
-const value = ref(null);
-
-const questions = ref([
-  {
-    label: 'Gender',
-    placeholder: 'Select a gender',
-    options: [
-      'Male',
-      'Female',
-      'Prefer not to say'
-    ]
-  },
-  {
-    label: 'Age range',
-    options: [
-      'Below 18',
-      '18-29',
-      '30-49',
-      '50 and above'
-    ]
-  },
-  {
-    label: 'Household income range',
-    options: ['Below 30k', '31k - 55k', '56k - 89k', '90k - 149k', '150k and above']
-  },
-  {
-    label: 'How familiar are you with the Girl Scouts organization?',
-    options: ['Not at all', 'Somewhat', `Very familiar`, `Currently Involved`]
-  },
-  {
-    label: 'Words least associated with Girl Scouts',
-    options: ['Crafts', 'STEM', 'College prep', 'Cookies', 'Leadership', 'Scholarship', 'Camp-outs', 'Uniform', 'Only for younger girls', 'Only for older girls', 'Community conscious', 'Untrusting', 'Trusting', 'Forward-thinking', 'Stuck in the past']
-  },
-  {
-    label: 'Do you feel the girl scouts can contribute to your specific community?',
-    options: ['Yes', 'No', 'I have not thought about it']
-  },
-  {
-    label: 'Biggest challenge the youth in your community faces',
-    options: ['Low high school graduation rate', 'High teenage birth rate', 'Economically disadvantaged', 'Not enough affordable after school activities']
-  },
-  {
-    label: 'Zip Code'
-  }
-])
-
 const answers = ref([])
 const complete = ref(false);
 
