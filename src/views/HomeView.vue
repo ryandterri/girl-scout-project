@@ -33,10 +33,10 @@ const save_answers = async () => {
         <div class="flex flex-col gap-4 p-5 shadow shadow-gray-500 rounded-lg">
 
 
-          <div v-if="complete" class="font-bold text-2xl text-center p-24">
+          <div v-if="!complete" class="font-bold text-2xl text-center p-24">
            <div>Thank you for completing our survey</div>
-            <a href="https://www.gsnetx.org/en/get-involved.html" class="bg-green-600 text-white rounded-md mt-4 px-8 py-4 block">
-              Click here to get involved
+            <a href="https://www.gsnetx.org/en/discover.html" class="bg-green-600 text-white rounded-md mt-4 px-8 py-4 block">
+              Click here to discover more
             </a>
           </div>
 
@@ -55,7 +55,7 @@ const save_answers = async () => {
                          :options="['Not at all', 'Somewhat', `Very familiar`, `Currently Involved`]"
                          placeholder="Select an option" v-model="answers[3]"></select-menu>
 
-            <select-menu label="Words least associated with Girl Scouts"
+            <select-menu label="Words LEAST associated with Girl Scouts"
                          :options="['Crafts', 'STEM', 'College prep', 'Cookies', 'Leadership', 'Scholarship', 'Camp-outs', 'Uniform', 'Only for younger girls', 'Only for older girls', 'Community conscious', 'Untrusting', 'Trusting', 'Forward-thinking', 'Stuck in the past']"
                          placeholder="Select first option" v-model="answers[4]"></select-menu>
 
