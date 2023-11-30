@@ -33,7 +33,7 @@ const save_answers = async () => {
         <div class="flex flex-col gap-4 p-5 shadow shadow-gray-500 rounded-lg">
 
 
-          <div v-if="!complete" class="font-bold text-2xl text-center p-24">
+          <div v-if="complete" class="font-bold text-2xl text-center p-24">
            <div>Thank you for completing our survey</div>
             <a href="https://www.gsnetx.org/en/discover.html" class="bg-green-600 text-white rounded-md mt-4 px-8 py-4 block">
               Click here to discover more
